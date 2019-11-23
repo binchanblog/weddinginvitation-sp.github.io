@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wedding Details</title>
+    <title>Wedding Invitation - Thiệp cưới SinhVV &amp; PhuongDVT</title>
     <style type="text/css">
         .full-height {
             position: relative;
@@ -116,6 +116,7 @@
                 max-width: 100%;
                 position: relative;
                 margin: auto;
+                margin-top: 10px;
             }
 
                 .slider .slide {
@@ -358,24 +359,18 @@
                 margin: 20px auto;
             }
     </style>
-
-
-
 </head>
 <body>
     <div class="wrapper">
-
         <div class="container">
             <div class="title">
                 Thiệp cưới
             </div>
-
-
-
             <div class="slider">
-
                 <div class="slide" style="display: block;">
                     <img id="current-image-0" data-idx="0" src="./Content/wedding.jpg">
+                    <!--<img id="current-image-1" data-idx="1" src="./Content/wedding.jpg">
+                    <img id="current-image-2" data-idx="2" src="./Content/wedding.jpg">-->
                 </div>
 
                 <!-- <div class="controls">
@@ -384,12 +379,8 @@
                 </div> -->
             </div>
             <div class="dots">
-
                 <span class="dot active" onclick="moveSlides(0)"></span>
-
             </div>
-
-
 
             <div class="details">
                 <img src="./Content/image1.png">
@@ -399,27 +390,23 @@
                         SinhVV
                     </div>
                     <div class="weds">
-                        weds
+                        và
                     </div>
                     <div>
                         PhuongDVT
                     </div>
                 </div>
 
-
                 <img src="./Content/image2.png" class="break">
                 <div class="date-time">
 
-
                     <div style="padding-bottom:10px;">
-                        05th Jan, 2020
+                        Ngày 05 tháng 01 năm 2020
                     </div>
-
 
                     <div style="padding-bottom:15px;">
-                        11:00 AM - 2:00 PM &nbsp;<span>(GMT +07:00)</span>
+                        Lúc 11:00 AM &nbsp;<span>(GMT +07:00)</span>
                     </div>
-
 
                     <!-- <div title="Add to Calendar" class="addeventatc" style="text-decoration:underline;font-family:Helvetica;font-size:15px;">
                         Add to Calendar
@@ -434,7 +421,6 @@
                             Save to Calendar
                         </a>
                     </div>
-
 
                 </div>
                 <div class="venue">
@@ -696,130 +682,10 @@
             }
         </script>
 
-        <script>
-            function validateForm() {
-                /**
-                 * Validate if user declines the request.
-                 * In this case only guest name, email, phone is made required
-                 */
-                if (!JSON.parse(status)) {
-                    var invitee_name = document.getElementsByClassName('inputs-invitee_full_name');
-                    var invitee_phone = document.getElementsByClassName('inputs-invitee_phone');
-                    var invitee_email = document.getElementsByClassName('inputs-invitee_email');
-
-                    if (invitee_name.length) {
-                        if (!invitee_name[0].value) {
-                            alert('Please fill all required fields');
-                            return false;
-                        }
-                    }
-
-                    if (invitee_email.length) {
-                        if (!invitee_email[0].value) {
-                            alert('Please fill all required fields');
-                            return false;
-                        }
-                    }
-
-                    if (invitee_phone.length) {
-                        if (!invitee_phone[0].value) {
-                            alert('Please fill all required fields');
-                            return false;
-                        }
-                    }
-
-                    return true;
-                }
-
-                // console.log('validating form');
-                var inputs = document.getElementsByTagName("input"), input = null, select = null, not_pass = false;
-                var selects = document.getElementsByTagName("select");
-                var textarea = document.getElementsByTagName("textarea");
-
-                // console.log(inputs, 'inputs');
-                // console.log(selects, 'selects');
-                // console.log(textarea, 'textarea');
-
-                for (var i = 0, len = inputs.length; i < len; i++) {
-                    input = inputs[i];
-
-                    // console.log(input, input.type, input.hasAttribute('required'));
-
-                    if (input.type == "hidden") {
-                        continue;
-                    }
-
-                    if (input.type == "radio" && input.hasAttribute('required') && !input.checked) {
-                        var input_name = input.name;
-                        var input_checked = document.querySelector('[name="' + input_name + '"]:checked');
-                        if (input_checked) {
-                            not_pass = false;
-                            continue;
-                        }
-                        not_pass = true;
-                    }
-
-                    if (input.type == "checkbox" && input.hasAttribute('required') && !input.checked) {
-                        var input_name = input.name;
-                        var input_checked = document.querySelector('[name="' + input_name + '"]:checked');
-                        if (input_checked) {
-                            not_pass = false;
-                            continue;
-                        }
-                        not_pass = true;
-                    }
-
-                    if (input.type == "text" && input.hasAttribute('required') && !input.value) {
-                        not_pass = true;
-                    }
-
-                    if (input.type == "number" && input.hasAttribute('required') && !input.value) {
-                        not_pass = true;
-                    }
-
-                    if (input.type == "email" && input.hasAttribute('required') && !input.value) {
-                        not_pass = true;
-                    }
-
-                    if (input.type == "checkbox" && input.hasAttribute('required') && !input.checked) {
-                        not_pass = true;
-                    }
-
-                    if (not_pass) {
-                        break;
-                    }
-                }
-
-                for (var i = 0, len = selects.length; i < len; i++) {
-                    select = selects[i];
-                    if (!select.value && select.hasAttribute('required')) {
-                        not_pass = true;
-                        break;
-                    }
-                }
-
-                for (var i = 0; i < textarea.length; i++) {
-                    var text = textarea[i];
-                    if (!text.value && text.hasAttribute('required')) {
-                        not_pass = true;
-                        break;
-                    }
-                }
-
-                if (not_pass) {
-                    alert('Please fill all required fields.')
-                    return false;
-                }
-
-                return true;
-            }
-        </script>
-
-
-        <div class="push"></div>
+        <!--<div class="push"></div>
         <div class="container-bottom">
-            <div class="poweredby">Powered by <a href="#"><img class="bottomlogo" src="./Content/logo.png"></a></div>
-        </div>
+            <div class="poweredby">Powered by me.</div>
+        </div>-->
 
     </div>
 
