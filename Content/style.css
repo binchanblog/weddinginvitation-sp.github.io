@@ -16,14 +16,14 @@ html, body {
 }
 
 .basefooter, .push {
-    height: 34px; /* .push must be the same height as .footer */
+    height: 20px; /* .push must be the same height as .footer */
     padding: 0px 8px 0px 8px;
 }
 
 .poweredby {
     text-align: center;
     padding: 8px 5px 8px 5px;
-    font-size: 12px;
+    font-size: 14px;
     color: #333333;
 }
 
