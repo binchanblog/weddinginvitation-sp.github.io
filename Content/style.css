@@ -1,0 +1,320 @@
+
+.full-height {
+    position: relative;
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+    height: 100%;
+    margin: 0 auto -34px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.basefooter, .push {
+    height: 34px; /* .push must be the same height as .footer */
+    padding: 0px 8px 0px 8px;
+}
+
+.poweredby {
+    text-align: center;
+    padding: 8px 5px 8px 5px;
+    font-size: 12px;
+    color: #333333;
+}
+
+    .poweredby a {
+        vertical-align: middle;
+    }
+
+    .poweredby .bottomlogo {
+        max-height: 10px;
+    }
+
+.container-bottom {
+    position: relative;
+    width: 100%;
+    bottom: 1%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+@font-face {
+    font-family: "Aramisi";
+    src: url(./UTM_Wedding_SP.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "SignPainter-HouseScript";
+    src: url(./SignPainter-HouseScript.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "UTM";
+    src: url(./UTMHelve.ttf) format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.full-height {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    margin: auto;
+    font-family: "UTM";
+    font-size: 13px;
+    display: table;
+}
+
+.container {
+    text-align: center;
+    width: 320px;
+    margin: auto;
+    border: 1px solid #f8f8f8;
+}
+
+.title {
+    background-color: #f8f8f8;
+    padding: 8px;
+    font-family: "Aramisi";
+    font-size: 30px;
+    letter-spacing: 0.1px;
+    color: #585858;
+    word-wrap: break-word;
+    font-weight: bold;
+}
+
+.dots span {
+    height: 5px;
+    width: 5px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+    .dots span.active {
+        background-color: black;
+        pointer-events: none;
+    }
+
+.slider {
+    height: 280px;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+}
+
+    .slider .slide {
+        display: none;
+    }
+
+    .slider img {
+        max-width: 100%;
+        height: 280px;
+    }
+
+.details {
+    padding: 18px;
+}
+
+    .details img {
+        width: 100%;
+    }
+
+.names {
+    font-size: 40px;
+    font-family: SignPainter-HouseScript;
+    font-weight: normal;
+    letter-spacing: 0.2px;
+    margin-top: 24px;
+    color: #585858;
+    word-wrap: break-word;
+}
+
+.weds {
+    font-family: UTM;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 8.75px;
+    padding-bottom: 8.75px;
+}
+
+.button-text {
+    cursor: pointer;
+    font-family: UTM;
+    font-size: 16px;
+    font-weight: bold;
+    color: #585858;
+    margin-top: 40px;
+    background-color: #f8f8f8;
+    border: solid 2px #c8c8c8;
+    padding: 10px 25px 10px 25px;
+    border-radius: 2px;
+}
+
+.date-time {
+    margin-top: 10px;
+    font-family: UTM;
+    font-size: 18px;
+    color: #585858;
+    word-wrap: break-word;
+}
+
+.tiec {    
+    font-size: 30px;
+    color: #585858;
+    word-wrap: break-word;
+    font-family: "Aramisi";
+}
+
+.venue {
+    margin-top: 24px;
+    font-family: UTM;
+    font-size: 17px;
+    color: #585858;
+    word-wrap: break-word;
+}
+
+.location {
+    margin-left: 31px;
+    position: relative;
+    width: 220px;
+    margin-top: 20px;
+    line-height: 30px;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: #3d7bf1;
+    border: solid 1px #3d7bf1;
+    font-family: UTM;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #ffffff;
+}
+
+    .location img {
+        padding-left: 12px;
+        width: 40px;
+        float: left;
+    }
+
+.break {
+    margin-top: 35px;
+}
+
+.rsvp {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: UTM;
+    font-size: 18px;
+    color: #585858;
+}
+
+    .rsvp .fields {
+        width: 100%;
+        padding-top: 20px;
+        text-align: left;
+    }
+
+input[type="text"] {
+    padding-left: 5px;
+    width: 100%;
+    height: 43px;
+    font-size: 16px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #979797;
+    margin-bottom: 3px;
+}
+
+.accept-btn {
+    cursor: pointer;
+    display: inline;
+    border-radius: 2px;
+    background-color: #c8c8c8;
+    border: solid 2px #585858;
+    text-align: center;
+    font-family: UTM;
+    font-weight: bold;
+    color: #585858;
+    padding: 7px 44px 7px 43.75px;
+    font-size: 14px;
+}
+
+.decline-btn {
+    cursor: pointer;
+    display: inline;
+    border-radius: 2px;
+    background-color: #f8f8f8;
+    border: solid 2px #dcdcdc;
+    text-align: center;
+    font-family: UTM;
+    font-weight: bold;
+    color: #585858;
+    padding: 7px 44px 7px 43.75px;
+    font-size: 14px;
+}
+
+.add-guests {
+    font-family: UTM;
+    color: #585858;
+    cursor: pointer;
+    margin-top: 45px;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #000000;
+}
+
+.submit-btn {
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    font-family: UTM;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 2px;
+    background-color: #c0392b;
+    border: solid 1px #c0392b;
+    padding: 10px 5px;
+}
+
+.ask-question .guest {
+    width: 100%;
+    text-align: left;
+    margin: 3px auto;
+}
+
+    .ask-question .guest input {
+        margin-bottom: 7px;
+    }
+
+.ask-question textarea, .rsvp-question textarea {
+    width: 100%;
+    margin-bottom: 21px;
+}
+
+.rsvp-question-options {
+    text-align: left;
+}
+
+.option input[type="radio"] {
+    margin-bottom: 5px;
+}
+
+.guest {
+    margin: 20px auto;
+}
