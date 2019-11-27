@@ -186,6 +186,12 @@ body {
     word-wrap: break-word;
 }
 
+	.venue img {
+        width: 24px;
+		float: left;
+		margin-right: 4px;
+    }
+
 .location {
     margin-left: 31px;
     position: relative;
