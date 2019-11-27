@@ -178,6 +178,10 @@ body {
     font-family: "Aramisi";
 }
 
+.tiec img {
+        width: 24px;
+    }
+
 .venue {
     margin-top: 24px;
     font-family: UTM;
@@ -185,12 +189,6 @@ body {
     color: #585858;
     word-wrap: break-word;
 }
-
-	.venue img {
-        width: 24px;
-		float: left;
-		margin-right: 4px;
-    }
 
 .location {
     margin-left: 31px;
