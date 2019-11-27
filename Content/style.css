@@ -90,7 +90,7 @@ body {
     letter-spacing: 0.1px;
     color: #585858;
     word-wrap: break-word;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .dots span {
