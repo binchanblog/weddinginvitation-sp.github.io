@@ -166,7 +166,7 @@ body {
 .date-time {
     margin-top: 10px;
     font-family: UTM;
-    font-size: 18px;
+    font-size: 17px;
     color: #585858;
     word-wrap: break-word;
 }
@@ -183,7 +183,7 @@ body {
     }
 
 .venue {
-    margin-top: 24px;
+    margin-top: 10px;
     font-family: UTM;
     font-size: 17px;
     color: #585858;
@@ -191,9 +191,9 @@ body {
 }
 
 .location {
-    margin-left: 31px;
+    margin-left: 56px;
     position: relative;
-    width: 220px;
+    width: 168px;
     margin-top: 20px;
     line-height: 30px;
     padding: 5px;
