@@ -191,9 +191,9 @@ body {
 }
 
 .location {
-    margin-left: 56px;
-    position: relative;
-    width: 168px;
+    margin-left: 40px;
+    position: relative !important;
+    width: 200px;
     margin-top: 20px;
     line-height: 30px;
     padding: 5px;
